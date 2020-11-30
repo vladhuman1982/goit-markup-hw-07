@@ -229,6 +229,12 @@
   text-transform: uppercase;
 }
 
+.advantages-item-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+}
+
 .doing {
   padding-bottom: 94px;
 }
@@ -425,10 +431,6 @@
   font-style: normal;
 }
 
-.footer-container-address-link:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .footer-container-address-location {
   font-weight: 400;
   font-size: 14px;
@@ -470,8 +472,7 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-join-container-link:hover,
-.footer-join-container-link:focus {
+.footer-join-container-link:hover, .footer-join-container-link:focus {
   cursor: pointer;
   background-color: var(--accent-color);
 }
