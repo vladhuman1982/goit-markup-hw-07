@@ -48,10 +48,22 @@
   align-items: center;
 }
 
-.hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
 }
 
 .header {
@@ -600,7 +612,6 @@
 }
 
 .hero-backdrop-form-checkbox {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -609,38 +620,39 @@
   margin-bottom: 30px;
 }
 
-.hero-backdrop-form-checkbox-check {
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-}
-
 .hero-backdrop-form-checkbox-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 14px;
   line-height: 1.7;
   color: #757575;
 }
 
+.hero-backdrop-form-checkbox-label::before {
+  content: "";
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  background-color: #fff;
+}
+
+.hero-backdrop-form-checkbox-check:checked + .hero-backdrop-form-checkbox-label::before {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  background-image: url(../.././images/studio/hero-backdrop/check.svg);
+  background-position: center;
+  background-size: contain;
+}
+
 .hero-backdrop-form-checkbox-label-conditions {
   text-decoration: underline;
   color: #2196f3;
-}
-
-.hero-backdrop-form-checkbox-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-  width: 16px;
-  height: 15px;
-}
-
-.hero-backdrop-form-checkbox-check:checked .hero-backdrop-form-checkbox-svg {
-  opacity: 1;
-  visibility: visible;
 }
 
 .hero-backdrop-form-btn {

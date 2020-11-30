@@ -346,7 +346,7 @@
         </div>
     </footer>
     <!--------------------------------- hero backdrop ------------------------------->
-    <div class="hero-backdrop hidden" data-modal>
+    <div class="hero-backdrop is-hidden" data-modal>
         <div class="hero-modal">
             <h2 class="hero-backdrop-form">Оставьте свои данные, мы вам перезвоним</h2>
             <form>
@@ -382,11 +382,8 @@
                     <textarea class="hero-backdrop-form-comment" name="comment" id="comment" rows="" placeholder="Введите текст"></textarea>
                 </div>
                 <div class="hero-backdrop-form-checkbox">
-                    <input class="hero-backdrop-form-checkbox-check" type="checkbox" name="checkbox" id="checkbox">
-                    <label for="checkbox" class="hero-backdrop-form-checkbox-label"> Соглашаюсь с рассылкой и принимаю <a href="" class="hero-backdrop-form-checkbox-label-conditions">Условия договора</a></label>
-                    <svg class="hero-backdrop-form-checkbox-svg">
-                        <use href="./images/sprite.svg#check"></use>
-                    </svg>
+                    <input class="hero-backdrop-form-checkbox-check visually-hidden" type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox" class="hero-backdrop-form-checkbox-label">Соглашаюсь с рассылкой и принимаю &nbsp;<a href="" class="hero-backdrop-form-checkbox-label-conditions"> Условия договора </a></label>
                 </div>
                     <button type="submit" class="hero-backdrop-form-btn">Отправить</button>
                 </form>
