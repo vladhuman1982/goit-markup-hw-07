@@ -1,0 +1,21 @@
+.doing {
+  padding-bottom: 94px;
+
+  &-flex {
+    display: flex;
+  }
+  &-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+
+    color: var(--color-title);
+  }
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &-img {
+    display: block;
+  }
+}

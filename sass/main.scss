@@ -1,0 +1,22 @@
+// UTILS
+@import "./utils/variables";
+
+// BASE
+@import "./base/base";
+@import "./base/container";
+
+// COMPONENTS
+@import "./components/appeal";
+@import "./components/flex";
+@import "./components/hidden";
+
+// LAYOUT PAGE STUDIO
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/doing";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/hero-backdrop";
+@import "./layout/hero-modal";
